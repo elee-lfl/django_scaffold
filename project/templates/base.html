@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>{% block title %}<<PROJECT>>{% endblock %}</title> 
+ 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+		<!-- Prep viewport for mobile -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+		<!-- SEARCH ENGINES --> 
+		<meta name="keywords" content="" /> 
+		<meta name="description" content="" /> 
+ 
+		<!-- CSS --> 
+		{% block include-css %}
+		{% endblock include-css %}
+	
+		<!-- JAVASCRIPT -->
+		{% block include-js %}
+		{% endblock include-js %}
+	
+		<!--[if lt IE 9]>
+	    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+	{% block content %}
+	{% endblock %}
+	</body>
+</html>
